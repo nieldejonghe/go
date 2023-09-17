@@ -1,30 +1,28 @@
-# go
-repository to keeping track of notes and projects while learning go also called golang
+# Learn Go
 
-# 1. Introduction to GO
-Following this youtube video:
-https://www.youtube.com/watch?v=yyUHQIec83I
+Restarting my attempt to learn go ... again.
+Following this weird guy as a mentor, [rwxrob](https://www.youtube.com/watch?v=rfspYuA-0EY)
+also trying to hone my markdown and vim skills along the way, in this repo I will be trying to keep my notes and projects used to improve my go skills.
 
-Goal of the video is to write a simple CLI app to learn the core concepts and syntax of go.
+My goal is not to become a 10x software developer but to further develop my carreer as a platform engineer creating a platform for developers.
 
-# Why go?
-Designed to run on multiple cores and built to support concurrency (Doing more than one thing at the same time)
-                                                                                                                               
-# Setting up your local env to work with go
+## Prerequisites
 
-Downloading latest version of go with cli
+* no prerequisites needed.
+* helps to know some coding langague, but not required. 
+* some basic git skills. 
+* some basic markdown to create notes.
+* github account, github is the best! 
 
-# find latest version using curl or by manually looking at download page
-VERSION=$(curl -s https://go.googlesource.com/go | grep -Po "<li class=\"RefList-item\"><a href=\"/go/\+/refs/tags/go\d\.\d*\">go\K(\d\.\d*)</a></li>" | cut -d'<' -f1)
+## Possible editors
 
-curl -O -L "https://golang.org/dl/go${VERSION}.linux-amd64.tar.gz"
+* VSCode, I will use this as i'm used to it.
+* Goland, popular.
+* vim-go, from terminal, rob his preffered way. 
 
-# Note we are not untarring the archive into an existing /usr/local/go tree as this is known to produce broken Go installations
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go${VERSION}.linux-amd64.tar.gz
+## ChatGPT
 
-# FYI: With the PATH variable, you tell the Operating System where to look in order to start a program, 
-# and the environmental variable is the place where the Operating System expects this kind of information.
-export PATH=$PATH:/usr/local/go/bin
-go version
-
+* you should use it to help you remember things, gives you hints.
+* comment code.
+* don't blindly commit chatgpt code to production without vetting it...
 
